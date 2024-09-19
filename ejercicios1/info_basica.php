@@ -11,6 +11,6 @@
             $nombre = "Damián";
             $anyo = 2003;
         ?>
-        <p>Me llamo <?php echo $nombre; ?> y nací el año <?php echo $anyo; ?>.</pgit commit -m "">
+        <p>Me llamo <?php echo $nombre; ?> y nací el año <?php echo $anyo; ?>
 </body>
 </html>
