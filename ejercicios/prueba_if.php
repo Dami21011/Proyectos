@@ -6,17 +6,37 @@
     <title>Prueba if</title>
 </head>
 <body>
+    <h1>Valoración notas</h1>
     <?php
-    $nota1 = 6.5;
-    $nota2 = 9;
-    $nota3 = 8;
+    $nota1 = rand(0,10);
+    $nota2 = rand(0,10);
+    $nota3 = rand(0,10);
+    $Notamayor;
     
     if ($nota1 > $nota2 && $nota1 > $nota3) {
-        echo "La nota 1 es mayor";
+        echo  $nota1." es la nota mayor que es la primera";
+        $Notamayor = $nota1;
     } elseif ($nota2 > $nota1 && $nota2 > $nota3){
-        echo "La nota 2 es mayor";
+        echo $nota2." es la nota mayor que es la segunda";
+        $Notamayor = $nota2;
     } else {
-        echo "La nota 3 es mayor";
+        echo $nota3." es la nota mayor que es la tercera";
+        $Notamayor = $nota3;
+    }
+
+    switch($Notamayor){
+        case $Notamayor < 5:
+            echo "<br>La nota mayor es un suspenso";
+            break;
+        case 6:
+            echo "<br>La nota mayor es un bien";
+            break;
+        case $Notamayor >= 7 && $Notamayor < 9:
+            echo "<br>La nota mayor es un notable";
+            break;
+        case $Notamayor >= 9 && $Notamayor <= 10:
+            echo "<br>La nota mayor es un sobresaliente";
+            break;
     }
 
     ?>
