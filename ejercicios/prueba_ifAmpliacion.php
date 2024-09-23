@@ -28,6 +28,9 @@
         case $Notamayor < 5:
             echo "<br>La nota mayor es un suspenso";
             break;
+        case $Notamayor == 5:
+            echo "<br>La nota mayor es un aprobado";
+            break;
         case 6:
             echo "<br>La nota mayor es un bien";
             break;
