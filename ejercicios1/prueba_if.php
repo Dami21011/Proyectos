@@ -9,11 +9,14 @@
     <?php
     $nota1 = 6.5;
     $nota2 = 2;
+    $nota3 = 8;
     
     if ($nota1 > $nota2) {
         echo "La nota 1 es mayor";
-    } else {
+    } elseif ($nota2 > $nota1){
         echo "La nota 2 es mayor";
+    } else {
+        echo "La nota 3 es mayor";
     }
 
     ?>
