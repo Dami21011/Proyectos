@@ -24,21 +24,6 @@
         $Notamayor = $nota3;
     }
 
-    switch($Notamayor){
-        case $Notamayor < 5:
-            echo "<br>La nota mayor es un suspenso";
-            break;
-        case 6:
-            echo "<br>La nota mayor es un bien";
-            break;
-        case $Notamayor >= 7 && $Notamayor < 9:
-            echo "<br>La nota mayor es un notable";
-            break;
-        case $Notamayor >= 9 && $Notamayor <= 10:
-            echo "<br>La nota mayor es un sobresaliente";
-            break;
-    }
-
     ?>
 </body>
 </html>
