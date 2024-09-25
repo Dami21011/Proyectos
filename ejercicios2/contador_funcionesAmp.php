@@ -12,35 +12,9 @@
     $n2 = 20;
     $n3;
 
-    function cuenta($n1, $n2, &$n3) {
-        if (!isset($n3)) {
-            $n3 = 1;
-        }
+    include "funciones.inc";
 
-        if ($n3 <= 0) {
-            echo "Número inválido para realizar la cuenta";
-        } else {
-            if ($n1 < $n2) {
-                for ($i = $n1; $i <= $n2; $i += $n3) {
-                    if ($i == $n2) {
-                        echo $i;
-                    } else {
-                        echo $i . ",";
-                    }
-                }
-            } else {
-                for ($i = $n1; $i >= $n2; $i -= $n3) {
-                    if ($i == $n2) {
-                        echo $i;
-                    } else {
-                        echo $i . ",";
-                    }
-                }
-            }
-        }
-    }
-
-    cuenta($n1, $n2, $n3);
+    cuenta2($n1, $n2, $n3);
     ?>
 </body>
 </html>

@@ -9,9 +9,8 @@
     <h1>Bienvenido</h1>
     <?php
     $n = "Damián";
-    function saludo($n){
-        echo "Hola, ".$n;
-    }
+
+    include "funciones.inc";
 
     saludo($n);
 

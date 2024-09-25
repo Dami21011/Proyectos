@@ -10,25 +10,8 @@
     <?php
     $n1 = 20;
     $n2 = 10;
-    function cuenta($n1,$n2){
-        if($n1 < $n2){
-            for ($i = $n1;$i <= $n2;$i++){
-                if($i == $n2){
-                    echo $i;
-                } else {
-                    echo $i.",";
-                }
-            }
-        } else {
-            for ($i = $n1; $i >= $n2; $i--) {
-                if ($i == $n2) {
-                    echo $i;
-                } else {
-                    echo $i . ",";
-                }
-            }
-        }
-    }
+
+    include "funciones.inc";
 
     cuenta($n1,$n2);
 

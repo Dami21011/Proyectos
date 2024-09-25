@@ -9,12 +9,7 @@
     <h1>Productos</h1>
     <?php
 
-
-    function calculaDescuento($precio,$descuento = 0) {
-        $precioFinal = $precio - ($precio * ($descuento/100));
-
-        return $precioFinal;
-    }
+    include "funciones.inc";
 
     echo "El precio con el descuento es de: ".calculaDescuento(120,10);
     ?>
