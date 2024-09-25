@@ -9,7 +9,7 @@
     <h1>Productos</h1>
     <?php
 
-    include "funciones.inc";
+    include "funciones.inc.php";
 
     echo "El precio con el descuento es de: ".calculaDescuento(120,10);
     ?>

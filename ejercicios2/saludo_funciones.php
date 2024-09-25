@@ -10,7 +10,7 @@
     <?php
     $n = "Damián";
 
-    include "funciones.inc";
+    include "funciones.inc.php";
 
     saludo($n);
 

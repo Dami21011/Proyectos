@@ -12,7 +12,7 @@
     $n2 = 20;
     $n3;
 
-    include "funciones.inc";
+    include "funciones.inc.php";
 
     cuenta2($n1, $n2, $n3);
     ?>

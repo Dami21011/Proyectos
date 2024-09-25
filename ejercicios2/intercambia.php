@@ -11,7 +11,7 @@
     $n1 = 10;
     $n2 = 20;
 
-    include "funciones.inc";
+    include "funciones.inc.php";
 
     intercambia($n1, $n2);
     echo "N1 valia 10 y ahora ".$n1."<br> N2 valia 20 y ahora ".$n2;

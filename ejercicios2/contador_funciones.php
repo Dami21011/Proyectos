@@ -11,7 +11,7 @@
     $n1 = 20;
     $n2 = 10;
 
-    include "funciones.inc";
+    include "funciones.inc.php";
 
     cuenta($n1,$n2);
 
