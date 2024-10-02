@@ -9,18 +9,16 @@
     <h1>Coches</h1>
     <?php 
         $arrayCoches = array(
-            array("matricula" => "111BCD", "marca" => "Ford", "modelo" => "Focus", "puertas" => 5),
-            array("matricula" => "222EFG", "marca" => "Seat", "modelo" => "Panda", "puertas" => 2),
-            array("matricula" => "333HIJ", "marca" => "Renault", "modelo" => "QP", "puertas" => 2),
-            array("matricula" => "011KLM", "marca" => "Toyota", "modelo" => "Supra", "puertas" => 5)
+            "111BCD" => array("Ford", "Focus", 5),
+            "222EFG" => array("Seat", "Panda", 2),
+            "333HIJ" => array("Renault", "QP", 2),
+            "444KLM" => array("Toyota", "Supra", 5)
         );
 
-        usort($arrayCoches, function($a, $b) {
-            return strcmp($a['matricula'], $b['matricula']);
-        });
+        ksort($arrayCoches);
 
-        foreach ($arrayCoches as $coche) {
-            echo "Matrícula: {$coche['matricula']}, Marca: {$coche['marca']}, Modelo: {$coche['modelo']}, Puertas: {$coche['puertas']}<br>";
+        foreach ($arrayCoches as $matricula => $coche) {
+            echo "Matrícula: $matricula, Marca: {$coche[0]}, Modelo: {$coche[1]}, Puertas: {$coche[2]}<br>";
         }
     ?>
 </body>
