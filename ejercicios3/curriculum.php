@@ -13,7 +13,7 @@
         $estudios_en = "Studies completed: GM SMR / GS DAW";
         $idiomas_en = "Languages I speak: Spanish / English / Valencian";
         
-        $idioma = substr($_SERVER['HTTP_ACCEPT_LANGUAGE'], 0, 2);
+        $idioma = $_GET["idioma"];
         $estudios_var = "estudios_" . $idioma;
         $idiomas_var = "idiomas_" . $idioma;
         
