@@ -10,7 +10,7 @@
     ?>
 </head>
 <body>
-    <h1><u>Personas</u></h1>
+    <h1><u>Ejercicio 1:</u></h1>
     <?php 
         $Persona1 = new Persona("26889321K","Damián Rodríguez López","damrodlop@alu.edu.gva.es");
 
