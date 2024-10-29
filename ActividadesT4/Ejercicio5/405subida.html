@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>405</title>
+</head>
+<body>
+    <h1><u>FORMULARIO</u></h1>
+    <form action="405subidaimagen.php" method="POST" enctype="multipart/form-data">
+
+        <p><label for="anchura">Anchura:</label>
+            <input type="text" name="anchura" id="anchura" value=""/>
+        </p>
+
+        <p><label for="altura">Altura:</label>
+            <input type="text" name="altura" id="altura" value=""/>
+        </p>
+        
+        <p><label for="soloImg">Inserte su archivo:</label>
+            <input type="file" name="soloImg" id="soloImg" value="" required/>
+        </p>
+           
+        <input type="submit" value="Enviar" name="enviar" />
+    </form>
+</body>
+</html>
